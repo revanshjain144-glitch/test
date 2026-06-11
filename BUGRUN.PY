@@ -12,7 +12,8 @@ BUG 3
 #lanes = ['North', 'South', 'East', 'West'] for lane in lanes    print('Lane:', lane)
 lanes = ['North', 'South', 'East', 'West'] for lane in lanes:    print('Lane:', lane)
 BUG 4
-import cv2
-img = cv2.imread('traffic.jpg')
-cv2.imshow('Traffic', img)
-cv2.destroyAllWindows()
+#import cv2 img = cv2.imread('traffic.jpg') cv2.imshow('Traffic', img) cv2.destroyAllWindows.
+import cv2 img = cv2.imread('traffic.jpg') cv2.imshow('traffic.jpg', img) cv2.destroyAllWindows().
+BIG 5
+#from ultralytics import YOLO import cv2 model = YOLO('yolov8n.pt') img   = cv2.imread('traffic.jpg') results = model(img)for box in results.boxes:         # <-- yahan dhyan do    class_id = int(box.cls[0])    print(model.names[class_id])
+
